@@ -1,0 +1,16 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/AbstractAotMojo.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/AbstractDependencyFilterMojo.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/CommandLineBuilder.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/DependencyFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/DubboProcessAotMojo.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/Exclude.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/ExcludeFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/FilterableDependency.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/Include.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/IncludeFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/JavaCompilerPluginConfiguration.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/JavaExecutable.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/JavaProcessExecutor.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/MatchingGroupIdFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/RunArguments.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-maven-plugin/src/main/java/org/apache/dubbo/maven/plugin/aot/RunProcess.java

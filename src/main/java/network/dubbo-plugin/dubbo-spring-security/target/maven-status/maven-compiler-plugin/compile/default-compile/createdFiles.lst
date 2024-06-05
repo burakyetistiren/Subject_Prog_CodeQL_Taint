@@ -1,0 +1,8 @@
+org/apache/dubbo/spring/security/filter/ContextHolderParametersSelectedTransferFilter.class
+org/apache/dubbo/spring/security/filter/ContextHolderAuthenticationPrepareFilter.class
+org/apache/dubbo/spring/security/filter/ContextHolderAuthenticationResolverFilter.class
+org/apache/dubbo/spring/security/utils/SecurityNames.class
+org/apache/dubbo/spring/security/filter/AuthenticationExceptionTranslatorFilter.class
+org/apache/dubbo/spring/security/model/SecurityScopeModelInitializer.class
+org/apache/dubbo/spring/security/jackson/ObjectMapperCodec.class
+org/apache/dubbo/spring/security/jackson/ObjectMapperCodecCustomer.class

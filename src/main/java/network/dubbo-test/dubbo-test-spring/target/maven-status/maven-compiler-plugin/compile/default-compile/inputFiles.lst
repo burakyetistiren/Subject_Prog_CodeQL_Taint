@@ -1,0 +1,4 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-test/dubbo-test-spring/src/main/java/org/apache/dubbo/test/spring/SpringAnnotationBeanTest.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-test/dubbo-test-spring/src/main/java/org/apache/dubbo/test/spring/SpringJavaConfigBeanTest.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-test/dubbo-test-spring/src/main/java/org/apache/dubbo/test/spring/SpringXmlConfigTest.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-test/dubbo-test-spring/src/main/java/org/apache/dubbo/test/spring/context/MockSpringInitCustomizer.java

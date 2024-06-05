@@ -1,0 +1,8 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/ZookeeperInstance.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/ZookeeperRegistry.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/ZookeeperRegistryFactory.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/ZookeeperServiceDiscovery.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/ZookeeperServiceDiscoveryChangeWatcher.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/ZookeeperServiceDiscoveryFactory.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/util/CuratorFrameworkParams.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-registry/dubbo-registry-zookeeper/src/main/java/org/apache/dubbo/registry/zookeeper/util/CuratorFrameworkUtils.java

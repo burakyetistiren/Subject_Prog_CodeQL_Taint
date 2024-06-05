@@ -1,0 +1,4 @@
+org/apache/dubbo/registry/multicast/MulticastServiceDiscoveryFactory.class
+org/apache/dubbo/registry/multicast/MulticastServiceDiscovery.class
+org/apache/dubbo/registry/multicast/MulticastRegistryFactory.class
+org/apache/dubbo/registry/multicast/MulticastRegistry.class

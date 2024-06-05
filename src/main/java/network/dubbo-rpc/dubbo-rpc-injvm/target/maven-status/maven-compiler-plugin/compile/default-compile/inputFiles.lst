@@ -1,0 +1,5 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-rpc/dubbo-rpc-injvm/src/main/java/org/apache/dubbo/rpc/protocol/injvm/DefaultParamDeepCopyUtil.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-rpc/dubbo-rpc-injvm/src/main/java/org/apache/dubbo/rpc/protocol/injvm/InjvmExporter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-rpc/dubbo-rpc-injvm/src/main/java/org/apache/dubbo/rpc/protocol/injvm/InjvmInvoker.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-rpc/dubbo-rpc-injvm/src/main/java/org/apache/dubbo/rpc/protocol/injvm/InjvmProtocol.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-rpc/dubbo-rpc-injvm/src/main/java/org/apache/dubbo/rpc/protocol/injvm/ParamDeepCopyUtil.java

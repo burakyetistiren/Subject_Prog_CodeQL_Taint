@@ -1,0 +1,6 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-fastjson2/src/main/java/org/apache/dubbo/common/serialize/fastjson2/FastJson2ObjectInput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-fastjson2/src/main/java/org/apache/dubbo/common/serialize/fastjson2/FastJson2ObjectOutput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-fastjson2/src/main/java/org/apache/dubbo/common/serialize/fastjson2/FastJson2Serialization.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-fastjson2/src/main/java/org/apache/dubbo/common/serialize/fastjson2/Fastjson2CreatorManager.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-fastjson2/src/main/java/org/apache/dubbo/common/serialize/fastjson2/Fastjson2ScopeModelInitializer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-fastjson2/src/main/java/org/apache/dubbo/common/serialize/fastjson2/Fastjson2SecurityManager.java

@@ -1,0 +1,9 @@
+org/apache/dubbo/common/serialize/fastjson2/FastJson2Serialization.class
+org/apache/dubbo/common/serialize/fastjson2/Fastjson2CreatorManager$1.class
+org/apache/dubbo/common/serialize/fastjson2/Fastjson2SecurityManager$DenyClass.class
+org/apache/dubbo/common/serialize/fastjson2/Fastjson2SecurityManager.class
+org/apache/dubbo/common/serialize/fastjson2/FastJson2ObjectInput.class
+org/apache/dubbo/common/serialize/fastjson2/FastJson2ObjectOutput.class
+org/apache/dubbo/common/serialize/fastjson2/Fastjson2SecurityManager$Handler.class
+org/apache/dubbo/common/serialize/fastjson2/Fastjson2CreatorManager.class
+org/apache/dubbo/common/serialize/fastjson2/Fastjson2ScopeModelInitializer.class

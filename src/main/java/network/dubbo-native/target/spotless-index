@@ -1,0 +1,20 @@
+Rxysr8UokbKbtxc1MNPGxwfa9gA+DR4ea35kYodLtrU=
+pom.xml 2024-06-05T00:01:28.612292102Z
+src/main/java/org/apache/dubbo/aot/generate/AotProcessor.java 2024-06-05T00:01:28.619099264Z
+src/main/java/org/apache/dubbo/aot/generate/ClassSourceScanner.java 2024-06-05T00:01:28.620518765Z
+src/main/java/org/apache/dubbo/aot/generate/ConditionalDescriber.java 2024-06-05T00:01:28.620992821Z
+src/main/java/org/apache/dubbo/aot/generate/ExecutableDescriber.java 2024-06-05T00:01:28.621741510Z
+src/main/java/org/apache/dubbo/aot/generate/FieldDescriber.java 2024-06-05T00:01:28.622882586Z
+src/main/java/org/apache/dubbo/aot/generate/JarScanner.java 2024-06-05T00:01:28.623688360Z
+src/main/java/org/apache/dubbo/aot/generate/MemberDescriber.java 2024-06-05T00:01:28.625146820Z
+src/main/java/org/apache/dubbo/aot/generate/NativeClassSourceWriter.java 2024-06-05T00:01:28.626147684Z
+src/main/java/org/apache/dubbo/aot/generate/NativeConfigurationWriter.java 2024-06-05T00:01:28.627643520Z
+src/main/java/org/apache/dubbo/aot/generate/ReflectConfigMetadataRepository.java 2024-06-05T00:01:28.628860474Z
+src/main/java/org/apache/dubbo/aot/generate/ReflectionConfigWriter.java 2024-06-05T00:01:28.630278141Z
+src/main/java/org/apache/dubbo/aot/generate/ResourceBundleDescriber.java 2024-06-05T00:01:28.631798937Z
+src/main/java/org/apache/dubbo/aot/generate/ResourceConfigMetadataRepository.java 2024-06-05T00:01:28.634306429Z
+src/main/java/org/apache/dubbo/aot/generate/ResourceConfigWriter.java 2024-06-05T00:01:28.636930757Z
+src/main/java/org/apache/dubbo/aot/generate/ResourcePatternDescriber.java 2024-06-05T00:01:28.638462470Z
+src/main/java/org/apache/dubbo/aot/generate/ResourceScanner.java 2024-06-05T00:01:28.638834815Z
+src/main/java/org/apache/dubbo/aot/generate/TypeDescriber.java 2024-06-05T00:01:28.639752509Z
+src/test/java/org/apache/dubbo/aot/generate/ResourcePatternDescriberTest.java 2024-06-05T00:01:28.645832483Z

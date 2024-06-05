@@ -1,0 +1,14 @@
+LQ3k0WoRKHRqZ73rjgVQJyN+yU5j+FGbuokihieNTas=
+pom.xml 2024-06-05T00:01:32.428653544Z
+src/main/java/org/apache/dubbo/common/serialize/fastjson2/FastJson2ObjectInput.java 2024-06-05T00:01:32.454935999Z
+src/main/java/org/apache/dubbo/common/serialize/fastjson2/FastJson2ObjectOutput.java 2024-06-05T00:01:32.457082522Z
+src/main/java/org/apache/dubbo/common/serialize/fastjson2/FastJson2Serialization.java 2024-06-05T00:01:32.458164679Z
+src/main/java/org/apache/dubbo/common/serialize/fastjson2/Fastjson2CreatorManager.java 2024-06-05T00:01:32.459836146Z
+src/main/java/org/apache/dubbo/common/serialize/fastjson2/Fastjson2ScopeModelInitializer.java 2024-06-05T00:01:32.462054838Z
+src/main/java/org/apache/dubbo/common/serialize/fastjson2/Fastjson2SecurityManager.java 2024-06-05T00:01:32.463505964Z
+src/test/java/com/example/test/TestPojo.java 2024-06-05T00:01:32.478331284Z
+src/test/java/org/apache/dubbo/common/serialize/fastjson2/FastJson2SerializationTest.java 2024-06-05T00:01:32.499064198Z
+src/test/java/org/apache/dubbo/common/serialize/fastjson2/TrustedNotSerializable.java 2024-06-05T00:01:32.507784126Z
+src/test/java/org/apache/dubbo/common/serialize/fastjson2/TrustedPojo.java 2024-06-05T00:01:32.512039045Z
+src/test/java/org/apache/dubbo/common/serialize/fastjson2/TrustedPojo2.java 2024-06-05T00:01:32.520966605Z
+src/test/java/org/apache/dubbo/common/serialize/fastjson2/TypeMatchTest.java 2024-06-05T00:01:32.523336509Z

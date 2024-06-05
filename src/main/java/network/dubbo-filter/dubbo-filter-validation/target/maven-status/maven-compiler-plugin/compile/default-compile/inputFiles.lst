@@ -1,0 +1,9 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/MethodValidated.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/Validation.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/Validator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/filter/ValidationFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/support/AbstractValidation.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/support/jvalidation/JValidation.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/support/jvalidation/JValidationNew.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/support/jvalidation/JValidator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-filter/dubbo-filter-validation/src/main/java/org/apache/dubbo/validation/support/jvalidation/JValidatorNew.java

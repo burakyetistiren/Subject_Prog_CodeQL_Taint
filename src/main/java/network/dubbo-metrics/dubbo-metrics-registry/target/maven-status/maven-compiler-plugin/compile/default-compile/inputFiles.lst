@@ -1,0 +1,6 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-metrics/dubbo-metrics-registry/src/main/java/org/apache/dubbo/metrics/registry/RegistryMetricsConstants.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-metrics/dubbo-metrics-registry/src/main/java/org/apache/dubbo/metrics/registry/collector/RegistryMetricsCollector.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-metrics/dubbo-metrics-registry/src/main/java/org/apache/dubbo/metrics/registry/collector/RegistryStatComposite.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-metrics/dubbo-metrics-registry/src/main/java/org/apache/dubbo/metrics/registry/event/RegistryEvent.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-metrics/dubbo-metrics-registry/src/main/java/org/apache/dubbo/metrics/registry/event/RegistrySpecListener.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-metrics/dubbo-metrics-registry/src/main/java/org/apache/dubbo/metrics/registry/event/RegistrySubDispatcher.java

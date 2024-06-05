@@ -1,0 +1,4 @@
+org/apache/dubbo/metrics/prometheus/PrometheusMetricsReporterFactory.class
+org/apache/dubbo/metrics/prometheus/NopPrometheusMetricsReporter.class
+org/apache/dubbo/metrics/prometheus/PrometheusMetricsReporterCmd.class
+org/apache/dubbo/metrics/prometheus/PrometheusMetricsReporter.class

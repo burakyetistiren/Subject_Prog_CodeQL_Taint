@@ -1,0 +1,7 @@
+org/apache/dubbo/qos/api/CommandContext.class
+org/apache/dubbo/qos/api/Cmd.class
+org/apache/dubbo/qos/api/BaseCommand.class
+org/apache/dubbo/qos/api/QosConfiguration.class
+org/apache/dubbo/qos/api/QosConfiguration$Builder.class
+org/apache/dubbo/qos/api/QosConfiguration$1.class
+org/apache/dubbo/qos/api/PermissionLevel.class

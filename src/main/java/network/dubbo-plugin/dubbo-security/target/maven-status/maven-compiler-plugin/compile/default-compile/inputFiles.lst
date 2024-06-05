@@ -1,0 +1,13 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/src/main/java/org/apache/dubbo/security/cert/CertConfig.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/src/main/java/org/apache/dubbo/security/cert/CertDeployerListener.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/src/main/java/org/apache/dubbo/security/cert/CertPair.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/src/main/java/org/apache/dubbo/security/cert/CertScopeModelInitializer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/src/main/java/org/apache/dubbo/security/cert/Constants.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/src/main/java/org/apache/dubbo/security/cert/DubboCertManager.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/src/main/java/org/apache/dubbo/security/cert/DubboCertProvider.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/target/generated-sources/protobuf/grpc-java/org/apache/dubbo/auth/v1alpha1/DubboCertificateServiceGrpc.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/target/generated-sources/protobuf/java/org/apache/dubbo/auth/v1alpha1/Ca.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/target/generated-sources/protobuf/java/org/apache/dubbo/auth/v1alpha1/DubboCertificateRequest.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/target/generated-sources/protobuf/java/org/apache/dubbo/auth/v1alpha1/DubboCertificateRequestOrBuilder.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/target/generated-sources/protobuf/java/org/apache/dubbo/auth/v1alpha1/DubboCertificateResponse.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-security/target/generated-sources/protobuf/java/org/apache/dubbo/auth/v1alpha1/DubboCertificateResponseOrBuilder.java

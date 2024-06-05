@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.dubbo</groupId>
+  <artifactId>dubbo-dependencies</artifactId>
+  <version>3.2.14-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <description>The parent project of dubbo</description>
+  <url>https://github.com/apache/dubbo/dubbo-dependencies</url>
+  <inceptionYear>2011</inceptionYear>
+  <organization>
+    <name>The Apache Software Foundation</name>
+    <url>http://www.apache.org/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>dubbo.io</id>
+      <name>The Dubbo Project Contributors</name>
+      <email>dev-subscribe@dubbo.apache.org</email>
+      <url>http://dubbo.apache.org/</url>
+    </developer>
+  </developers>
+  <mailingLists>
+    <mailingList>
+      <name>Development List</name>
+      <subscribe>dev-subscribe@dubbo.apache.org</subscribe>
+      <unsubscribe>dev-unsubscribe@dubbo.apache.org</unsubscribe>
+      <post>dev@dubbo.apache.org</post>
+    </mailingList>
+    <mailingList>
+      <name>Commits List</name>
+      <subscribe>commits-subscribe@dubbo.apache.org</subscribe>
+      <unsubscribe>commits-unsubscribe@dubbo.apache.org</unsubscribe>
+      <post>commits@dubbo.apache.org</post>
+    </mailingList>
+    <mailingList>
+      <name>Issues List</name>
+      <subscribe>issues-subscribe@dubbo.apache.org</subscribe>
+      <unsubscribe>issues-unsubscribe@dubbo.apache.org</unsubscribe>
+      <post>issues@dubbo.apache.org</post>
+    </mailingList>
+  </mailingLists>
+  <scm>
+    <connection>scm:git:https://github.com/apache/dubbo.git/dubbo-dependencies</connection>
+    <developerConnection>scm:git:https://github.com/apache/dubbo.git/dubbo-dependencies</developerConnection>
+    <url>https://github.com/apache/dubbo/dubbo-dependencies</url>
+  </scm>
+  <issueManagement>
+    <system>Github Issues</system>
+    <url>https://github.com/apache/dubbo/issues</url>
+  </issueManagement>
+  <distributionManagement>
+    <repository>
+      <id>apache.releases.https</id>
+      <name>Apache Release Distribution Repository</name>
+      <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>apache.snapshots.https</id>
+      <name>Apache Development Snapshot Repository</name>
+      <url>https://repository.apache.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <properties>
+    <distMgmtReleasesUrl>https://repository.apache.org/service/local/staging/deploy/maven2</distMgmtReleasesUrl>
+    <version.maven-plugin-tools>3.10.2</version.maven-plugin-tools>
+    <distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</distMgmtSnapshotsUrl>
+    <el_api_version>2.2.5</el_api_version>
+    <version.maven-deploy-plugin>3.1.1</version.maven-deploy-plugin>
+    <profile.name>oss</profile.name>
+    <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
+    <updateReleaseInfo>true</updateReleaseInfo>
+    <awaitility_version>4.2.1</awaitility_version>
+    <organization.logo>https://www.apache.org/images/asf_logo_wide_2016.png</organization.logo>
+    <version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
+    <junit_jupiter_version>5.9.3</junit_jupiter_version>
+    <version.maven-gpg-plugin>3.1.0</version.maven-gpg-plugin>
+    <maven_surefire_version>3.2.5</maven_surefire_version>
+    <version.maven-enforcer-plugin>3.4.1</version.maven-enforcer-plugin>
+    <protobuf-java_version>3.22.3</protobuf-java_version>
+    <distMgmtSnapshotsName>Apache Development Snapshot Repository</distMgmtSnapshotsName>
+    <rat.skip>true</rat.skip>
+    <version.maven-scm-publish-plugin>3.2.1</version.maven-scm-publish-plugin>
+    <hazelcast_version>3.12.13</hazelcast_version>
+    <maven_jetty_version>9.4.54.v20240208</maven_jetty_version>
+    <maven_jacoco_version>0.8.12</maven_jacoco_version>
+    <version.apache-resource-bundles>1.5</version.apache-resource-bundles>
+    <distMgmtReleasesName>Apache Release Distribution Repository</distMgmtReleasesName>
+    <jaxb_api_version>2.2.7</jaxb_api_version>
+    <minimalJavaBuildVersion>1.8</minimalJavaBuildVersion>
+    <maven.plugin.tools.version>3.10.2</maven.plugin.tools.version>
+    <version.checksum-maven-plugin>1.11</version.checksum-maven-plugin>
+    <maven_deploy_version>2.8.2</maven_deploy_version>
+    <spotless.action>check</spotless.action>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <jacoco.skip>true</jacoco.skip>
+    <revision>3.2.14-SNAPSHOT</revision>
+    <spotless-maven-plugin.version>2.43.0</spotless-maven-plugin.version>
+    <checkstyle.skip>true</checkstyle.skip>
+    <version.maven-clean-plugin>3.3.2</version.maven-clean-plugin>
+    <mockito_version>4.11.0</mockito_version>
+    <version.maven-site-plugin>3.12.1</version.maven-site-plugin>
+    <version.maven-release-plugin>3.0.1</version.maven-release-plugin>
+    <maven_flatten_version>1.6.0</maven_flatten_version>
+    <gpg.useagent>true</gpg.useagent>
+    <version.maven-surefire>3.2.2</version.maven-surefire>
+    <version.maven-project-info-reports-plugin>3.4.5</version.maven-project-info-reports-plugin>
+    <version.apache-rat-plugin>0.15</version.apache-rat-plugin>
+    <version.maven-help-plugin>3.4.0</version.maven-help-plugin>
+    <version.maven-source-plugin>3.3.0</version.maven-source-plugin>
+    <maven_enforce_version>3.5.0</maven_enforce_version>
+    <java_source_version>1.8</java_source_version>
+    <version.maven-ear-plugin>3.3.0</version.maven-ear-plugin>
+    <maven_checkstyle_version>3.3.1</maven_checkstyle_version>
+    <jprotoc_version>1.2.2</jprotoc_version>
+    <maven_protobuf_plugin_version>0.6.1</maven_protobuf_plugin_version>
+    <surefire.version>3.2.2</surefire.version>
+    <cglib_version>2.2.2</cglib_version>
+    <hibernate_validator_version>5.2.4.Final</hibernate_validator_version>
+    <maven_source_version>3.3.1</maven_source_version>
+    <maven_javadoc_version>3.7.0</maven_javadoc_version>
+    <version.maven-shade-plugin>3.5.1</version.maven-shade-plugin>
+    <maven_failsafe_version>3.2.5</maven_failsafe_version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <version.maven-invoker-plugin>3.6.0</version.maven-invoker-plugin>
+    <grpc_version>1.54.0</grpc_version>
+    <assembly.tarLongFileMode>posix</assembly.tarLongFileMode>
+    <file_encoding>UTF-8</file_encoding>
+    <version.maven-remote-resources-plugin>3.1.0</version.maven-remote-resources-plugin>
+    <version.maven-war-plugin>3.4.0</version.maven-war-plugin>
+    <maven_compiler_version>3.13.0</maven_compiler_version>
+    <version.maven-fluido-skin>1.11.2</version.maven-fluido-skin>
+    <hamcrest_version>2.2</hamcrest_version>
+    <checkstyle_unix.skip>true</checkstyle_unix.skip>
+    <version.maven-assembly-plugin>3.6.0</version.maven-assembly-plugin>
+    <version.maven-resources-plugin>3.3.1</version.maven-resources-plugin>
+    <argline>-server -Xms256m -Xmx512m -Dfile.encoding=UTF-8
+            -Djava.net.preferIPv4Stack=true -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m</argline>
+    <minimalMavenBuildVersion>3.6.3</minimalMavenBuildVersion>
+    <maven_antrun_version>3.1.0</maven_antrun_version>
+    <palantirJavaFormat.version>2.38.0</palantirJavaFormat.version>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <version.maven-jar-plugin>3.3.0</version.maven-jar-plugin>
+    <version.maven-scm-plugin>2.0.1</version.maven-scm-plugin>
+    <skip_maven_deploy>false</skip_maven_deploy>
+    <version.maven-checkstyle-plugin>3.3.1</version.maven-checkstyle-plugin>
+    <java_target_version>1.8</java_target_version>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <version.maven-dependency-plugin>3.6.1</version.maven-dependency-plugin>
+    <maven_os_plugin_version>1.7.1</maven_os_plugin_version>
+    <version.maven-javadoc-plugin>3.6.2</version.maven-javadoc-plugin>
+    <project.build.outputTimestamp>2020-04-01T08:04:00Z</project.build.outputTimestamp>
+    <maven_jar_version>3.4.1</maven_jar_version>
+    <arguments></arguments>
+    <version.maven-antrun-plugin>3.1.0</version.maven-antrun-plugin>
+    <version.maven-install-plugin>3.1.1</version.maven-install-plugin>
+    <dubbo-shared-resources.version>1.0.0</dubbo-shared-resources.version>
+  </properties>
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>https://repository.apache.org/snapshots</url>
+    </repository>
+  </repositories>
+</project>

@@ -1,0 +1,16 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/Cleanable.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/Constants.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/DataInput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/DataOutput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/DefaultMultipleSerialization.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/DefaultSerializationExceptionWrapper.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/MultipleSerialization.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/ObjectInput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/ObjectOutput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/Serialization.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/SerializationException.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/SerializationScopeModelInitializer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/support/DefaultSerializationSelector.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/support/PreferSerializationProviderImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/support/SerializableClassRegistry.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-api/src/main/java/org/apache/dubbo/common/serialize/support/SerializationOptimizer.java

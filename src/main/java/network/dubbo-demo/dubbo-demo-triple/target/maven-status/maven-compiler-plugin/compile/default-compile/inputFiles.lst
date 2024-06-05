@@ -1,0 +1,13 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/build/generated/source/proto/main/java/org/apache/dubbo/demo/hello/HelloReply.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/build/generated/source/proto/main/java/org/apache/dubbo/demo/hello/HelloReplyOrBuilder.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/build/generated/source/proto/main/java/org/apache/dubbo/demo/hello/HelloRequest.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/build/generated/source/proto/main/java/org/apache/dubbo/demo/hello/HelloRequestOrBuilder.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/build/generated/source/proto/main/java/org/apache/dubbo/demo/hello/HelloWorldProto.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/GreeterService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/GreeterServiceImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/GreeterWrapperService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/GreeterWrapperServiceImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/consumer/ApiConsumer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/consumer/ApiWrapperConsumer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/provider/ApiProvider.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-triple/src/main/java/org/apache/dubbo/demo/provider/ApiWrapperProvider.java

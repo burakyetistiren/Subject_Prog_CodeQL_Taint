@@ -1,0 +1,88 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+dubbo-remoting-netty4
+
+
+From: 'Alibaba Group' (https://github.com/alibaba)
+
+  - fastjson2 (https://github.com/alibaba/fastjson2) com.alibaba.fastjson2:fastjson2:jar:2.0.51
+    License: Apache 2  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'GlassFish Community' (https://javaee.github.io/glassfish)
+
+  - javax.annotation API (http://jcp.org/en/jsr/detail?id=250) javax.annotation:javax.annotation-api:jar:1.3.2
+    License: CDDL + GPLv2 with classpath exception  (https://github.com/javaee/javax.annotation/blob/master/LICENSE)
+
+
+From: 'Shigeru Chiba, www.javassist.org'
+
+  - Javassist (https://www.javassist.org/) org.javassist:javassist:bundle:3.30.2-GA
+    License: MPL 1.1  (https://www.mozilla.org/en-US/MPL/1.1/)
+    License: LGPL 2.1  (https://www.gnu.org/licenses/lgpl-2.1.html)
+    License: Apache License 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+
+  - dubbo-common (https://github.com/apache/dubbo/dubbo-common) org.apache.dubbo:dubbo-common:jar:3.2.14-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+  - dubbo-remoting-api (https://github.com/apache/dubbo/dubbo-remoting/dubbo-remoting-api) org.apache.dubbo:dubbo-remoting-api:jar:3.2.14-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+  - dubbo-serialization-api (https://github.com/apache/dubbo/dubbo-serialization/dubbo-serialization-api) org.apache.dubbo:dubbo-serialization-api:jar:3.2.14-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+
+  - Apache Commons IO (https://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.16.1
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+From: 'The Netty Project' (https://netty.io/)
+
+  - Netty/Buffer (https://netty.io/netty-buffer/) io.netty:netty-buffer:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Codec (https://netty.io/netty-codec/) io.netty:netty-codec:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Codec/HTTP (https://netty.io/netty-codec-http/) io.netty:netty-codec-http:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Codec/Socks (https://netty.io/netty-codec-socks/) io.netty:netty-codec-socks:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Common (https://netty.io/netty-common/) io.netty:netty-common:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Handler (https://netty.io/netty-handler/) io.netty:netty-handler:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Handler/Proxy (https://netty.io/netty-handler-proxy/) io.netty:netty-handler-proxy:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Resolver (https://netty.io/netty-resolver/) io.netty:netty-resolver:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Transport (https://netty.io/netty-transport/) io.netty:netty-transport:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Transport/Classes/Epoll (https://netty.io/netty-transport-classes-epoll/) io.netty:netty-transport-classes-epoll:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Transport/Native/Epoll (https://netty.io/netty-transport-native-epoll/) io.netty:netty-transport-native-epoll:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+  - Netty/Transport/Native/Unix/Common (https://netty.io/netty-transport-native-unix-common/) io.netty:netty-transport-native-unix-common:jar:4.1.110.Final
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+
+
+
+

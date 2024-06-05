@@ -1,0 +1,11 @@
+org/apache/dubbo/gen/AbstractGenerator.class
+org/apache/dubbo/gen/grpc/reactive/ReactorDubboGrpcGenerator.class
+org/apache/dubbo/gen/dubbo/DubboGenerator.class
+org/apache/dubbo/gen/tri/Dubbo3TripleGenerator.class
+org/apache/dubbo/gen/AbstractGenerator$MethodContext.class
+org/apache/dubbo/gen/AbstractGenerator$1.class
+org/apache/dubbo/gen/AbstractGenerator$ServiceContext.class
+org/apache/dubbo/gen/tri/reactive/ReactorDubbo3TripleGenerator.class
+org/apache/dubbo/gen/grpc/DubboGrpcGenerator.class
+org/apache/dubbo/gen/dubbo/Dubbo3Generator.class
+org/apache/dubbo/gen/grpc/reactive/RxDubboGrpcGenerator.class

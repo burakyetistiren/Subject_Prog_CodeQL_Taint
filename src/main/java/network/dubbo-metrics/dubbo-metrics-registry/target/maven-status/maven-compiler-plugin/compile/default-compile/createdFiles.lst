@@ -1,0 +1,10 @@
+org/apache/dubbo/metrics/registry/event/RegistrySubDispatcher.class
+org/apache/dubbo/metrics/registry/event/RegistrySubDispatcher$CategorySet.class
+org/apache/dubbo/metrics/registry/collector/RegistryMetricsCollector$1.class
+org/apache/dubbo/metrics/registry/event/RegistryEvent$1.class
+org/apache/dubbo/metrics/registry/collector/RegistryStatComposite.class
+org/apache/dubbo/metrics/registry/event/RegistrySpecListener.class
+org/apache/dubbo/metrics/registry/RegistryMetricsConstants.class
+org/apache/dubbo/metrics/registry/event/RegistryEvent.class
+org/apache/dubbo/metrics/registry/event/RegistrySubDispatcher$MCat.class
+org/apache/dubbo/metrics/registry/collector/RegistryMetricsCollector.class

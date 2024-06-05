@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network
+baselineLinesOfCode: 287279
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  sha: 7c75fd54bf4d85f877751399d7606ea9717c87de
+  cliVersion: 2.17.1
+  creationTime: 2024-06-05T00:11:46.990512Z
+finalised: true

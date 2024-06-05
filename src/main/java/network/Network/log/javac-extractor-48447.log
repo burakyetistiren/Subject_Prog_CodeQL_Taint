@@ -1,0 +1,12 @@
+[2024-06-04 17:12:23] [javac-extractor-48447] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 21 --javac-args @@@/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/Network/log/ext/javac.args
+                                              user.dir=/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network
+[2024-06-04 17:12:23] [javac-extractor-48447] Compilation name /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/Network/trap/java/diagnostics/diagnostic.trap.gz
+[2024-06-04 17:12:25] [javac-extractor-48447] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2024-06-04 17:12:25] [javac-extractor-48447] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2024-06-04 17:12:25] [javac-extractor-48447] Javac init time: 1.5s
+[2024-06-04 17:12:25] [javac-extractor-48447] Javac attr time: 0.0s
+[2024-06-04 17:12:25] [javac-extractor-48447] Extractor time: 0.0s
+[2024-06-04 17:12:25] [javac-extractor-48447] Other time: 0.5s
+[2024-06-04 17:12:25] [javac-extractor-48447] Total time: 2.0s
+[2024-06-04 17:12:25] [javac-extractor-48447] [ERROR] 1 errors were reported by javac.

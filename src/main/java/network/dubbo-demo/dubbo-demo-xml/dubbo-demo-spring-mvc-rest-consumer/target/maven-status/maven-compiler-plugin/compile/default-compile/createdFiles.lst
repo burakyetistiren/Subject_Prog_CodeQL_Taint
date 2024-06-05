@@ -1,0 +1,3 @@
+org/apache/dubbo/demo/rest/api/consumer/SpringRestDemoServiceConsumer.class
+org/apache/dubbo/demo/rest/api/SpringMvcRestConsumer.class
+org/apache/dubbo/demo/rest/api/config/DubboConfig.class

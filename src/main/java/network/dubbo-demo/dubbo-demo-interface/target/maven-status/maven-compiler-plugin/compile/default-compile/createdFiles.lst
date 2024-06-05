@@ -1,0 +1,13 @@
+org/apache/dubbo/demo/DemoService.class
+org/apache/dubbo/demo/TripleService.class
+po/TestPO.class
+org/apache/dubbo/demo/rest/api/ExceptionMapperService.class
+org/apache/dubbo/demo/rest/api/CurlService.class
+org/apache/dubbo/demo/rest/api/HttpRequestAndResponseRPCContextService.class
+org/apache/dubbo/demo/rest/api/JaxRsRestDemoService.class
+org/apache/dubbo/demo/GreetingService.class
+org/apache/dubbo/demo/rest/api/HttpMethodService.class
+org/apache/dubbo/demo/rest/api/SpringRestDemoService.class
+org/apache/dubbo/demo/rest/api/DubboServiceAnnotationService.class
+po/User.class
+org/apache/dubbo/demo/RestDemoService.class

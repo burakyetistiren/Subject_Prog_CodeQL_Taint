@@ -1,0 +1,50 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.endpoint.DubboEndpoint",
+      "name": "endpoints.dubbo",
+      "type": "org.apache.dubbo.spring.boot.actuate.endpoint.DubboEndpoint"
+    },
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.health.DubboHealthIndicatorProperties",
+      "name": "management.health.dubbo",
+      "type": "org.apache.dubbo.spring.boot.actuate.health.DubboHealthIndicatorProperties"
+    },
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.health.DubboHealthIndicatorProperties",
+      "name": "management.health.dubbo.status",
+      "sourceMethod": "getStatus()",
+      "type": "org.apache.dubbo.spring.boot.actuate.health.DubboHealthIndicatorProperties$Status"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.endpoint.DubboEndpoint",
+      "name": "endpoints.dubbo.enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.endpoint.DubboEndpoint",
+      "name": "endpoints.dubbo.id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.endpoint.DubboEndpoint",
+      "name": "endpoints.dubbo.sensitive",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.health.DubboHealthIndicatorProperties$Status",
+      "name": "management.health.dubbo.status.defaults",
+      "description": "The defaults names of {@link StatusChecker} <p> The defaults : \"memory\", \"load\"",
+      "type": "java.util.Set<java.lang.String>"
+    },
+    {
+      "sourceType": "org.apache.dubbo.spring.boot.actuate.health.DubboHealthIndicatorProperties$Status",
+      "name": "management.health.dubbo.status.extras",
+      "description": "The extra names of {@link StatusChecker}",
+      "type": "java.util.Set<java.lang.String>"
+    }
+  ]
+}

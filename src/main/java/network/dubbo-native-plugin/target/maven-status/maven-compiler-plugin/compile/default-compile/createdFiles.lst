@@ -1,0 +1,4 @@
+org/apache/dubbo/maven/plugin/DubboNativeCodeGeneratorMojo.class
+org/apache/dubbo/maven/plugin/ClassFinder.class
+org/apache/dubbo/maven/plugin/CodeGenerator.class
+org/apache/dubbo/maven/plugin/Test.class

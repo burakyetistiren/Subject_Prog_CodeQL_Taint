@@ -1,0 +1,8 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/filter/AuthenticationExceptionTranslatorFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/filter/ContextHolderAuthenticationPrepareFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/filter/ContextHolderAuthenticationResolverFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/filter/ContextHolderParametersSelectedTransferFilter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/jackson/ObjectMapperCodec.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/jackson/ObjectMapperCodecCustomer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/model/SecurityScopeModelInitializer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-spring-security/src/main/java/org/apache/dubbo/spring/security/utils/SecurityNames.java

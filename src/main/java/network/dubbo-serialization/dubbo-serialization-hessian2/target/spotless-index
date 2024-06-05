@@ -1,0 +1,15 @@
+VrmfTyrx4K9k99hCoeZWvzADvJHiVGiHKS5YpcUJ9zo=
+pom.xml 2024-06-05T00:01:32.532538577Z
+src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2ClassLoaderListener.java 2024-06-05T00:01:32.543840833Z
+src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2FactoryManager.java 2024-06-05T00:01:32.548239173Z
+src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2ObjectInput.java 2024-06-05T00:01:32.549327414Z
+src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2ObjectOutput.java 2024-06-05T00:01:32.551598732Z
+src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2ScopeModelInitializer.java 2024-06-05T00:01:32.553404328Z
+src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2Serialization.java 2024-06-05T00:01:32.553901593Z
+src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2SerializerFactory.java 2024-06-05T00:01:32.554645907Z
+src/test/java/com/example/test/TestPojo.java 2024-06-05T00:01:32.571720461Z
+src/test/java/org/apache/dubbo/common/serialize/hessian2/Hessian2SerializationTest.java 2024-06-05T00:01:32.579568488Z
+src/test/java/org/apache/dubbo/common/serialize/hessian2/TrustedNotSerializable.java 2024-06-05T00:01:32.580444972Z
+src/test/java/org/apache/dubbo/common/serialize/hessian2/TrustedPojo.java 2024-06-05T00:01:32.581056283Z
+src/test/java/org/apache/dubbo/common/serialize/hessian2/TrustedPojo2.java 2024-06-05T00:01:32.581835347Z
+src/test/java/org/apache/dubbo/common/serialize/hessian2/TypeMatchTest.java 2024-06-05T00:01:32.582454783Z

@@ -1,0 +1,8 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/AbstractGenerator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/dubbo/Dubbo3Generator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/dubbo/DubboGenerator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/grpc/DubboGrpcGenerator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/grpc/reactive/ReactorDubboGrpcGenerator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/grpc/reactive/RxDubboGrpcGenerator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/tri/Dubbo3TripleGenerator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-compiler/src/main/java/org/apache/dubbo/gen/tri/reactive/ReactorDubbo3TripleGenerator.java

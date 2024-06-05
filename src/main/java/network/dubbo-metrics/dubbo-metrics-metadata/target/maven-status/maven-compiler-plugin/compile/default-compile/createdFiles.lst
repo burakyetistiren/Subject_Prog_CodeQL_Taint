@@ -1,0 +1,7 @@
+org/apache/dubbo/metrics/metadata/collector/MetadataMetricsCollector.class
+org/apache/dubbo/metrics/metadata/event/MetadataSubDispatcher$MCat.class
+org/apache/dubbo/metrics/metadata/MetadataMetricsConstants.class
+org/apache/dubbo/metrics/metadata/event/MetadataSubDispatcher.class
+org/apache/dubbo/metrics/metadata/event/MetadataEvent.class
+org/apache/dubbo/metrics/metadata/collector/MetadataMetricsCollector$1.class
+org/apache/dubbo/metrics/metadata/event/MetadataSubDispatcher$CategorySet.class

@@ -1,0 +1,13 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/DemoService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/GreetingService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/RestDemoService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/TripleService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/rest/api/CurlService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/rest/api/DubboServiceAnnotationService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/rest/api/ExceptionMapperService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/rest/api/HttpMethodService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/rest/api/HttpRequestAndResponseRPCContextService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/rest/api/JaxRsRestDemoService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/org/apache/dubbo/demo/rest/api/SpringRestDemoService.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/po/TestPO.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-interface/src/main/java/po/User.java

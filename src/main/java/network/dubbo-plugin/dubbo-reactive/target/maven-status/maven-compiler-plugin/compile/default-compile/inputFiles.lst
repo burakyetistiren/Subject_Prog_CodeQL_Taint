@@ -1,0 +1,12 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/AbstractTripleReactorPublisher.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/AbstractTripleReactorSubscriber.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/ClientTripleReactorPublisher.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/ClientTripleReactorSubscriber.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/ServerTripleReactorPublisher.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/ServerTripleReactorSubscriber.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/calls/ReactorClientCalls.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/calls/ReactorServerCalls.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/handler/ManyToManyMethodHandler.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/handler/ManyToOneMethodHandler.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/handler/OneToManyMethodHandler.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-plugin/dubbo-reactive/src/main/java/org/apache/dubbo/reactive/handler/OneToOneMethodHandler.java

@@ -1,0 +1,9 @@
+MgSeT/Yhbe7ZJXnSxj4vyiuelyYk1Ji2QnTynbJphtw=
+pom.xml 2024-06-05T00:01:29.668933090Z
+src/main/java/org/apache/dubbo/registry/multiple/MultipleRegistry.java 2024-06-05T00:01:29.673563979Z
+src/main/java/org/apache/dubbo/registry/multiple/MultipleRegistryFactory.java 2024-06-05T00:01:29.674607011Z
+src/main/java/org/apache/dubbo/registry/multiple/MultipleServiceDiscovery.java 2024-06-05T00:01:29.675355325Z
+src/main/java/org/apache/dubbo/registry/multiple/MultipleServiceDiscoveryFactory.java 2024-06-05T00:01:29.676050971Z
+src/test/java/org/apache/dubbo/registry/multiple/MultipleRegistry2S2RTest.java 2024-06-05T00:01:29.684901695Z
+src/test/java/org/apache/dubbo/registry/multiple/MultipleRegistryTestUtil.java 2024-06-05T00:01:29.685714344Z
+src/test/java/org/apache/dubbo/registry/multiple/MultipleServiceDiscoveryTest.java 2024-06-05T00:01:29.686764500Z

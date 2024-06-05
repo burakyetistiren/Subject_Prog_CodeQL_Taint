@@ -1,0 +1,8 @@
+[2024-06-04 17:38:41] [javac-output-94993] error: no source files
+[2024-06-04 17:38:41] [javac-output-94993] Note: Annotation processing is enabled because one or more processors were found
+[2024-06-04 17:38:41] [javac-output-94993]   on the class path. A future release of javac may disable annotation processing
+[2024-06-04 17:38:41] [javac-output-94993]   unless at least one processor is specified by name (-processor), or a search
+[2024-06-04 17:38:41] [javac-output-94993]   path is specified (--processor-path, --processor-module-path), or annotation
+[2024-06-04 17:38:41] [javac-output-94993]   processing is enabled explicitly (-proc:only, -proc:full).
+[2024-06-04 17:38:41] [javac-output-94993]   Use -Xlint:-options to suppress this message.
+[2024-06-04 17:38:41] [javac-output-94993]   Use -proc:none to disable annotation processing.

@@ -1,0 +1,5 @@
+org/apache/dubbo/metrics/config/event/ConfigCenterEvent.class
+org/apache/dubbo/metrics/config/ConfigCenterMetricsConstants.class
+org/apache/dubbo/metrics/config/event/ConfigCenterSubDispatcher.class
+org/apache/dubbo/metrics/config/event/ConfigCenterSubDispatcher$1.class
+org/apache/dubbo/metrics/config/collector/ConfigCenterMetricsCollector.class

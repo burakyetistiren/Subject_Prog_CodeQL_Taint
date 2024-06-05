@@ -1,0 +1,9 @@
+org/apache/dubbo/demo/rest/api/impl/JaxRsRestDemoServiceImpl.class
+org/apache/dubbo/demo/rest/api/impl/DubboServiceAnnotationServiceImpl.class
+org/apache/dubbo/demo/rest/api/impl/CurlServiceImpl.class
+org/apache/dubbo/demo/rest/api/RestProvider.class
+org/apache/dubbo/demo/rest/api/impl/ExceptionMapperServiceImpl.class
+org/apache/dubbo/demo/rest/api/impl/HttpMethodServiceImpl.class
+org/apache/dubbo/demo/rest/api/config/DubboConfig.class
+org/apache/dubbo/demo/rest/api/impl/HttpRequestAndResponseRPCContextServiceImpl.class
+org/apache/dubbo/demo/rest/api/extension/ExceptionMapperForTest.class

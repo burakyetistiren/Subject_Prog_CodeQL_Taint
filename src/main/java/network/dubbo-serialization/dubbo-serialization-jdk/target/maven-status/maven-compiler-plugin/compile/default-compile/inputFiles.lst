@@ -1,0 +1,9 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/java/CompactedJavaSerialization.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/java/CompactedObjectInputStream.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/java/CompactedObjectOutputStream.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/java/JavaObjectInput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/java/JavaObjectOutput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/java/JavaSerialization.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/nativejava/NativeJavaObjectInput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/nativejava/NativeJavaObjectOutput.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-serialization/dubbo-serialization-jdk/src/main/java/org/apache/dubbo/common/serialize/nativejava/NativeJavaSerialization.java

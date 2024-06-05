@@ -1,0 +1,9 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/RestProvider.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/config/DubboConfig.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/extension/ExceptionMapperForTest.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/impl/CurlServiceImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/impl/DubboServiceAnnotationServiceImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/impl/ExceptionMapperServiceImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/impl/HttpMethodServiceImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/impl/HttpRequestAndResponseRPCContextServiceImpl.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/network/dubbo-demo/dubbo-demo-xml/dubbo-demo-jaxrs-rest-provider/src/main/java/org/apache/dubbo/demo/rest/api/impl/JaxRsRestDemoServiceImpl.java

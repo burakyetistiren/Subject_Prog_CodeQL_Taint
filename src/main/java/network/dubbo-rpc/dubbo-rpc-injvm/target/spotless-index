@@ -1,0 +1,21 @@
+Doxhu3mYUit2eTVqUXLiV6Kzae8nEDT+2o8BG6Uqo7s=
+pom.xml 2024-06-05T00:01:31.343383321Z
+src/main/java/org/apache/dubbo/rpc/protocol/injvm/DefaultParamDeepCopyUtil.java 2024-06-05T00:01:31.362523604Z
+src/main/java/org/apache/dubbo/rpc/protocol/injvm/InjvmExporter.java 2024-06-05T00:01:31.364886549Z
+src/main/java/org/apache/dubbo/rpc/protocol/injvm/InjvmInvoker.java 2024-06-05T00:01:31.365939956Z
+src/main/java/org/apache/dubbo/rpc/protocol/injvm/InjvmProtocol.java 2024-06-05T00:01:31.367534337Z
+src/main/java/org/apache/dubbo/rpc/protocol/injvm/ParamDeepCopyUtil.java 2024-06-05T00:01:31.368658621Z
+src/test/java/demo/Empty.java 2024-06-05T00:01:31.386470114Z
+src/test/java/demo/MultiClassLoaderService.java 2024-06-05T00:01:31.390837328Z
+src/test/java/demo/MultiClassLoaderServiceImpl.java 2024-06-05T00:01:31.395686474Z
+src/test/java/demo/MultiClassLoaderServiceRequest.java 2024-06-05T00:01:31.399949601Z
+src/test/java/demo/MultiClassLoaderServiceResult.java 2024-06-05T00:01:31.404041182Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/DemoRequest.java 2024-06-05T00:01:31.417815221Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/DemoService.java 2024-06-05T00:01:31.418799209Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/DemoServiceImpl.java 2024-06-05T00:01:31.419466478Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/IEcho.java 2024-06-05T00:01:31.420035746Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/InjvmClassLoaderTest.java 2024-06-05T00:01:31.421884426Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/InjvmDeepCopyTest.java 2024-06-05T00:01:31.423810609Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/InjvmProtocolTest.java 2024-06-05T00:01:31.424435086Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/ProtocolTest.java 2024-06-05T00:01:31.424964644Z
+src/test/java/org/apache/dubbo/rpc/protocol/injvm/Type.java 2024-06-05T00:01:31.425680540Z
