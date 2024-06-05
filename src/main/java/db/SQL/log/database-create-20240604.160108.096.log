@@ -1,0 +1,747 @@
+[2024-06-04 16:01:08] This is codeql database create codeql-db --language=java --command=mvn clean compile
+[2024-06-04 16:01:08] Log file was started late.
+[2024-06-04 16:01:08] [PROGRESS] database create> Initializing database at /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db.
+[2024-06-04 16:01:08] Running plumbing command: codeql database init --language=java --extractor-options-verbosity=1 --qlconfig-file=/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/qlconfig.yml --source-root=/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db --allow-missing-source-root=false --allow-already-existing -- /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db
+[2024-06-04 16:01:08] Calling plumbing command: codeql resolve languages --extractor-options-verbosity=1 --format=betterjson
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /Library/codeql/.codeqlmanifest.json
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/go/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/python/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/java/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/html/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/xml/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/properties/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/cpp/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/swift/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/csv/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/yaml/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/csharp/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/javascript/codeql-extractor.yml.
+[2024-06-04 16:01:08] [DETAILS] resolve languages> Parsing /Library/codeql/ruby/codeql-extractor.yml.
+[2024-06-04 16:01:08] Plumbing command codeql resolve languages completed:
+                      {
+                        "aliases" : {
+                          "c" : "cpp",
+                          "c++" : "cpp",
+                          "c-c++" : "cpp",
+                          "c-cpp" : "cpp",
+                          "c#" : "csharp",
+                          "java-kotlin" : "java",
+                          "kotlin" : "java",
+                          "javascript-typescript" : "javascript",
+                          "typescript" : "javascript"
+                        },
+                        "extractors" : {
+                          "go" : [
+                            {
+                              "extractor_root" : "/Library/codeql/go"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/Library/codeql/python",
+                              "extractor_options" : {
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Python extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "python_executable_name" : {
+                                  "title" : "Controls the name of the Python executable used by the Python extractor.",
+                                  "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(py|python|python3)$"
+                                }
+                              }
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/Library/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                },
+                                "add_prefer_source" : {
+                                  "title" : "Whether to always prefer source files over class files.",
+                                  "description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction (experimental).",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/Library/codeql/html"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/Library/codeql/xml"
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "/Library/codeql/properties"
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/Library/codeql/cpp",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "swift" : [
+                            {
+                              "extractor_root" : "/Library/codeql/swift"
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/Library/codeql/csv"
+                            }
+                          ],
+                          "yaml" : [
+                            {
+                              "extractor_root" : "/Library/codeql/yaml"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/Library/codeql/csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+                                  "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/Library/codeql/javascript",
+                              "extractor_options" : {
+                                "skip_types" : {
+                                  "title" : "Skip type extraction for TypeScript",
+                                  "description" : "Whether to skip the extraction of types in a TypeScript application",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/Library/codeql/ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+[2024-06-04 16:01:08] [PROGRESS] database init> Calculating baseline information in /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db
+[2024-06-04 16:01:08] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2024-06-04 16:01:08] [DETAILS] database init> Running command in /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db: /Library/codeql/tools/osx64/scc --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2024-06-04 16:01:08] [SPAMMY] database init> Found 1279 baseline files for java.
+[2024-06-04 16:01:08] [PROGRESS] database init> Calculated baseline information for languages: java (434ms).
+[2024-06-04 16:01:08] [PROGRESS] database init> Resolving extractor java.
+[2024-06-04 16:01:08] [DETAILS] database init> Found candidate extractor root for java: /Library/codeql/java.
+[2024-06-04 16:01:08] [PROGRESS] database init> Successfully loaded extractor Java/Kotlin (java) from /Library/codeql/java.
+[2024-06-04 16:01:08] [SPAMMY] database init> Determining macOS System Integrity Protection status...
+[2024-06-04 16:01:08] [SPAMMY] database init> Running command [/usr/bin/csrutil, status].
+[2024-06-04 16:01:08] [SPAMMY] database init> SIP is enabled.
+[2024-06-04 16:01:09] [PROGRESS] database init> Created skeleton CodeQL database at /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db. This in-progress database is ready to be populated by an extractor.
+[2024-06-04 16:01:09] Plumbing command codeql database init completed.
+[2024-06-04 16:01:09] [PROGRESS] database create> Running build command: [mvn, clean, compile]
+[2024-06-04 16:01:09] Running plumbing command: codeql database trace-command --working-dir=/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db --index-traceless-dbs --no-db-cluster -- /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db mvn clean compile
+[2024-06-04 16:01:09] [PROGRESS] database trace-command> Running command in /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db: [mvn, clean, compile]
+[2024-06-04 16:01:14] [build-stdout] [INFO] Scanning for projects...
+[2024-06-04 16:01:15] [build-stdout] [INFO] 
+[2024-06-04 16:01:15] [build-stdout] [INFO] ------------------------< org.mybatis:mybatis >-------------------------
+[2024-06-04 16:01:15] [build-stdout] [INFO] Building mybatis 3.5.17-SNAPSHOT
+[2024-06-04 16:01:15] [build-stdout] [INFO]   from pom.xml
+[2024-06-04 16:01:15] [build-stdout] [INFO] --------------------------------[ jar ]---------------------------------
+[2024-06-04 16:01:16] [build-stdout] [INFO] 
+[2024-06-04 16:01:16] [build-stdout] [INFO] --- clean:3.3.2:clean (default-clean) @ mybatis ---
+[2024-06-04 16:01:16] [build-stdout] [INFO] Deleting /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/target
+[2024-06-04 16:01:16] [build-stdout] [INFO] 
+[2024-06-04 16:01:16] [build-stdout] [INFO] --- enforcer:3.4.1:enforce (enforce-java) @ mybatis ---
+[2024-06-04 16:01:17] [build-stdout] [INFO] Rule 0: org.codehaus.mojo.extraenforcer.dependencies.EnforceBytecodeVersion passed
+[2024-06-04 16:01:17] [build-stdout] [INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[2024-06-04 16:01:17] [build-stdout] [INFO] Rule 2: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[2024-06-04 16:01:17] [build-stdout] [INFO] Rule 3: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[2024-06-04 16:01:17] [build-stdout] [INFO] 
+[2024-06-04 16:01:17] [build-stdout] [INFO] --- git-commit-id:8.0.2:revision (git-commit-id) @ mybatis ---
+[2024-06-04 16:01:20] [build-stdout] [INFO] 
+[2024-06-04 16:01:20] [build-stdout] [INFO] --- jacoco:0.8.12:prepare-agent (prepare-agent) @ mybatis ---
+[2024-06-04 16:01:20] [build-stdout] [INFO] argLine set to -javaagent:/Users/burakyetistiren/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/target/jacoco.exec,excludes=org.apache.ibatis.ognl.*:org.apache.ibatis.javassist.* -Xmx2048m -javaagent:${settings.localRepository}/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar
+[2024-06-04 16:01:20] [build-stdout] [INFO] 
+[2024-06-04 16:01:20] [build-stdout] [INFO] --- whitespace:1.3.2:trim (default) @ mybatis ---
+[2024-06-04 16:01:20] [build-stdout] [INFO] Processing the following extensions: css,groovy,html,java,js,json,jsp,jspx,kt,kts,md,properties,scala,sh,toml,wsdl,xhtml,xml,xsd,yaml,yml
+[2024-06-04 16:01:21] [build-stdout] [INFO] 
+[2024-06-04 16:01:21] [build-stdout] [INFO] --- formatter:2.23.0:format (default) @ mybatis ---
+[2024-06-04 16:01:28] [build-stdout] [INFO] Processed 1279 files in 7s171ms (Formatted: 0, Skipped: 0, Unchanged: 1279, Failed: 0, Readonly: 0)
+[2024-06-04 16:01:28] [build-stdout] [INFO] 
+[2024-06-04 16:01:28] [build-stdout] [INFO] --- impsort:1.9.0:sort (default) @ mybatis ---
+[2024-06-04 16:01:42] [build-stdout] [INFO] Processed 1279 files in 00:12.917 (Already Sorted: 1279, Needed Sorting: 0)
+[2024-06-04 16:01:42] [build-stdout] [INFO] 
+[2024-06-04 16:01:42] [build-stdout] [INFO] >>> rewrite:5.32.1:run (default) > process-test-classes @ mybatis >>>
+[2024-06-04 16:01:42] [build-stdout] [INFO] 
+[2024-06-04 16:01:42] [build-stdout] [INFO] --- enforcer:3.4.1:enforce (enforce-java) @ mybatis ---
+[2024-06-04 16:01:42] [build-stdout] [INFO] Rule 0: org.codehaus.mojo.extraenforcer.dependencies.EnforceBytecodeVersion passed
+[2024-06-04 16:01:42] [build-stdout] [INFO] Rule 3: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[2024-06-04 16:01:42] [build-stdout] [INFO] 
+[2024-06-04 16:01:42] [build-stdout] [INFO] --- git-commit-id:8.0.2:revision (git-commit-id) @ mybatis ---
+[2024-06-04 16:01:45] [build-stdout] [INFO] 
+[2024-06-04 16:01:45] [build-stdout] [INFO] --- jacoco:0.8.12:prepare-agent (prepare-agent) @ mybatis ---
+[2024-06-04 16:01:45] [build-stdout] [INFO] argLine set to -javaagent:/Users/burakyetistiren/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/target/jacoco.exec,excludes=org.apache.ibatis.ognl.*:org.apache.ibatis.javassist.* -Xmx2048m -javaagent:${settings.localRepository}/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar
+[2024-06-04 16:01:45] [build-stdout] [INFO] 
+[2024-06-04 16:01:45] [build-stdout] [INFO] --- whitespace:1.3.2:trim (default) @ mybatis ---
+[2024-06-04 16:01:45] [build-stdout] [INFO] Processing the following extensions: css,groovy,html,java,js,json,jsp,jspx,kt,kts,md,properties,scala,sh,toml,wsdl,xhtml,xml,xsd,yaml,yml
+[2024-06-04 16:01:45] [build-stdout] [INFO] 
+[2024-06-04 16:01:45] [build-stdout] [INFO] --- formatter:2.23.0:format (default) @ mybatis ---
+[2024-06-04 16:01:49] [build-stdout] [INFO] Processed 1279 files in 3s670ms (Formatted: 0, Skipped: 0, Unchanged: 1279, Failed: 0, Readonly: 0)
+[2024-06-04 16:01:49] [build-stdout] [INFO] 
+[2024-06-04 16:01:49] [build-stdout] [INFO] --- impsort:1.9.0:sort (default) @ mybatis ---
+[2024-06-04 16:01:49] [build-stdout] [INFO] Processed 1279 files in 00:00.147 (Already Sorted: 1279, Needed Sorting: 0)
+[2024-06-04 16:01:49] [build-stdout] [INFO] 
+[2024-06-04 16:01:49] [build-stdout] [INFO] --- license:4.5:format (default) @ mybatis ---
+[2024-06-04 16:01:50] [build-stdout] [INFO] Updating license headers...
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/usr/local/bin/git.semmle.00011EEE.1828B528.slice.x86_64
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/usr/bin/dirname.semmle.00011E66.09F54548.slice.x86_64
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/bin/sh.semmle.00011E3C.1BFC2388.slice.x86_64
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/usr/local/git/bin/git
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/usr/local/bin/git
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/bin/bash.semmle.00011E3C.232C97C8.slice.x86_64
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/usr/bin/dirname
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/usr/bin/uname.semmle.00011E5F.3816EAD0.slice.x86_64
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/bin/bash
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/usr/bin/uname
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/tags.db.codeql-lock
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java.semmle.00011E3C.1A58CFE0.slice.x86_64
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/tags.db
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/tracer.environment
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/lib/jspawnhelper.semmle.00011E3C.0342E278.slice.x86_64
+[2024-06-04 16:01:51] [build-stdout] [WARNING] Unknown file extension: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/lib/jspawnhelper
+[2024-06-04 16:01:51] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2024-06-04 16:01:51] [build-stdout] [INFO] BUILD FAILURE
+[2024-06-04 16:01:51] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2024-06-04 16:01:51] [build-stdout] [INFO] Total time:  36.580 s
+[2024-06-04 16:01:51] [build-stdout] [INFO] Finished at: 2024-06-04T16:01:51-07:00
+[2024-06-04 16:01:51] [build-stdout] [INFO] ------------------------------------------------------------------------
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] Failed to execute goal com.mycila:license-maven-plugin:4.5:format (default) on project mybatis: Execution default of goal com.mycila:license-maven-plugin:4.5:format failed: Cannot read file /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/db/codeql-db/working/copy-root/000001F5/bin/sh. Cause: Input length = 1 -> [Help 1]
+[2024-06-04 16:01:51] [build-stdout] [ERROR] 
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] null
+[2024-06-04 16:01:51] [build-stdout] java.lang.InterruptedException
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.reportGet (CompletableFuture.java:386)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.CompletableFuture.get (CompletableFuture.java:2073)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.getFileStoreAttributes (FS.java:466)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS$FileStoreAttributes.get (FS.java:369)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.util.FS.getFileStoreAttributes (FS.java:940)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.fileStoreAttributeCache (FileSnapshot.java:574)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.getEffectiveRacyThreshold (FileSnapshot.java:507)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isRacyClean (FileSnapshot.java:493)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:537)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified (FileSnapshot.java:342)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.scanRef (RefDirectory.java:1087)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readRef (RefDirectory.java:1050)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.readAndResolve (RefDirectory.java:264)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.internal.storage.file.RefDirectory.firstExactRef (RefDirectory.java:318)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.RefDatabase.findRef (RefDatabase.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.findRef (Repository.java:1093)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.Repository.resolve (Repository.java:474)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.lib.IndexDiff.<init> (IndexDiff.java:271)
+[2024-06-04 16:01:51] [build-stdout]     at org.eclipse.jgit.api.StatusCommand.call (StatusCommand.java:116)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.isFileModifiedOrUnstaged (GitLookup.java:256)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.GitLookup.getYearOfLastChange (GitLookup.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.git.CopyrightRangeProvider.adjustProperties (CopyrightRangeProvider.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$0 (AbstractLicenseMojo.java:650)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.mergeProperties (Document.java:97)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.header.Header.isMatchForText (Header.java:179)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.document.Document.hasHeader (Document.java:85)
+[2024-06-04 16:01:51] [build-stdout]     at com.mycila.maven.plugin.license.AbstractLicenseMojo.lambda$executeForLicenseSet$1 (AbstractLicenseMojo.java:694)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:572)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.FutureTask.run (FutureTask.java:317)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1144)
+[2024-06-04 16:01:51] [build-stdout]     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:642)
+[2024-06-04 16:01:51] [build-stdout]     at java.lang.Thread.run (Thread.java:1583)
+[2024-06-04 16:01:51] [build-stdout] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[2024-06-04 16:01:51] [build-stdout] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[2024-06-04 16:01:51] [build-stdout] [ERROR] 
+[2024-06-04 16:01:51] [build-stdout] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+[2024-06-04 16:01:51] [build-stdout] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[2024-06-04 16:01:51] [ERROR] Spawned process exited abnormally (code 1; tried to run: [/Library/codeql/tools/osx64/preload_tracer, mvn, clean, compile])
+[2024-06-04 16:01:51] Exception caught at top level: Exit status 1 from command: [mvn, clean, compile]
+                      com.semmle.cli2.Commandline.executeAndCheckResult(Commandline.java:170)
+                      com.semmle.cli2.Commandline.runWithoutReturn(Commandline.java:123)
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:227)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:126)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:862)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:442)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:860)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:119)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:199)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:181)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:862)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:442)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:860)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:744)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:725)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:237)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:257)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)
