@@ -1,0 +1,4 @@
+org/apache/flume/channel/SpillableMemoryChannel.class
+org/apache/flume/channel/SpillableMemoryChannel$MutableInteger.class
+org/apache/flume/channel/SpillableMemoryChannel$SpillableMemoryTransaction.class
+org/apache/flume/channel/SpillableMemoryChannel$DrainOrderQueue.class

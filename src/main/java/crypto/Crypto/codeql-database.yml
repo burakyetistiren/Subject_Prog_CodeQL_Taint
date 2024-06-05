@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto
+baselineLinesOfCode: 6172
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  cliVersion: 2.17.1
+  creationTime: 2024-06-04T23:23:04.803421Z
+finalised: true

@@ -1,0 +1,2 @@
+org/apache/flume/sink/irc/IRCSink.class
+org/apache/flume/sink/irc/IRCSink$IRCConnectionListener.class

@@ -1,0 +1,15 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Flume NG Environment Variable Config Filter
+
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - Flume NG Config Filters API (https://www.apache.org/flume-parent/flume-ng-configfilters/flume-ng-config-filter-api/) org.apache.flume:flume-ng-config-filter-api:jar:1.11.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

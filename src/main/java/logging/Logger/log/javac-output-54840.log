@@ -1,0 +1,18 @@
+[2024-06-05 00:39:31] [javac-output-54840] warning: [options] bootstrap class path is not set in conjunction with -source 8
+[2024-06-05 00:39:31] [javac-output-54840]   not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+[2024-06-05 00:39:31] [javac-output-54840]     --release 8 is recommended instead of -source 8 -target 1.8 because it sets the bootstrap class path automatically
+[2024-06-05 00:39:31] [javac-output-54840] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2024-06-05 00:39:31] [javac-output-54840] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2024-06-05 00:39:31] [javac-output-54840] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2024-06-05 00:39:31] [javac-output-54840] Note: Annotation processing is enabled because one or more processors were found
+[2024-06-05 00:39:31] [javac-output-54840]   on the class path. A future release of javac may disable annotation processing
+[2024-06-05 00:39:31] [javac-output-54840]   unless at least one processor is specified by name (-processor), or a search
+[2024-06-05 00:39:31] [javac-output-54840]   path is specified (--processor-path, --processor-module-path), or annotation
+[2024-06-05 00:39:31] [javac-output-54840]   processing is enabled explicitly (-proc:only, -proc:full).
+[2024-06-05 00:39:31] [javac-output-54840]   Use -Xlint:-options to suppress this message.
+[2024-06-05 00:39:31] [javac-output-54840]   Use -proc:none to disable annotation processing.
+[2024-06-05 00:40:18] [javac-output-54840] /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-core/src/main/java/org/apache/flume/interceptor/RemoveHeaderInterceptor.java:160: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+[2024-06-05 00:40:18] [javac-output-54840]             "listSeparator={}, matchRegex={}", new String[] {withName, fromList, listSeparator,
+[2024-06-05 00:40:18] [javac-output-54840]                                                ^
+[2024-06-05 00:40:18] [javac-output-54840]   cast to Object for a varargs call
+[2024-06-05 00:40:18] [javac-output-54840]   cast to Object[] for a non-varargs call and to suppress this warning

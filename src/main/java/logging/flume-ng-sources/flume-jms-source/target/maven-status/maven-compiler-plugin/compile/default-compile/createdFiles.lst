@@ -1,0 +1,12 @@
+org/apache/flume/source/jms/DefaultJMSMessageConverter$Builder.class
+org/apache/flume/source/jms/JMSSourceConfiguration.class
+org/apache/flume/source/jms/JMSMessageConsumer$1.class
+org/apache/flume/source/jms/JMSMessageConverter.class
+org/apache/flume/source/jms/JMSMessageConsumer.class
+org/apache/flume/source/jms/JMSSource.class
+org/apache/flume/source/jms/JMSMessageConverter$Builder.class
+org/apache/flume/source/jms/InitialContextFactory.class
+org/apache/flume/source/jms/DefaultJMSMessageConverter.class
+org/apache/flume/source/jms/JMSDestinationType.class
+org/apache/flume/source/jms/DefaultJMSMessageConverter$1.class
+org/apache/flume/source/jms/JMSDestinationLocator.class

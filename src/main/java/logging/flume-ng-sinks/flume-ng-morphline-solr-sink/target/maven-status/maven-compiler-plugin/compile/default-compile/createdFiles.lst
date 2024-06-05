@@ -1,0 +1,14 @@
+org/apache/flume/sink/solr/morphline/MorphlineInterceptor$LocalMorphlineInterceptor.class
+org/apache/flume/sink/solr/morphline/MorphlineInterceptor$Builder.class
+org/apache/flume/sink/solr/morphline/BlobDeserializer.class
+org/apache/flume/sink/solr/morphline/MorphlineHandler.class
+org/apache/flume/sink/solr/morphline/UUIDInterceptor.class
+org/apache/flume/sink/solr/morphline/MorphlineHandlerImpl.class
+org/apache/flume/sink/solr/morphline/MorphlineSolrSink.class
+org/apache/flume/sink/solr/morphline/UUIDInterceptor$Builder.class
+org/apache/flume/sink/solr/morphline/MorphlineSink.class
+org/apache/flume/sink/solr/morphline/BlobDeserializer$Builder.class
+org/apache/flume/sink/solr/morphline/BlobHandler.class
+org/apache/flume/sink/solr/morphline/MorphlineInterceptor.class
+org/apache/flume/sink/solr/morphline/MorphlineInterceptor$1.class
+org/apache/flume/sink/solr/morphline/MorphlineInterceptor$Collector.class

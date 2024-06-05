@@ -1,0 +1,15 @@
+org/apache/flume/api/SecureThriftRpcClient$UgiSaslClientTransport$1.class
+org/apache/flume/auth/UGIExecutor.class
+org/apache/flume/auth/SecurityException.class
+org/apache/flume/auth/KerberosUser.class
+org/apache/flume/auth/KerberosAuthenticator.class
+org/apache/flume/api/SecureThriftRpcClient$UgiSaslClientTransport.class
+org/apache/flume/auth/SimpleAuthenticator$1.class
+org/apache/flume/auth/PrivilegedExecutor.class
+org/apache/flume/api/SecureRpcClientFactory.class
+org/apache/flume/auth/SimpleAuthenticator$SimpleAuthenticatorHolder.class
+org/apache/flume/auth/SimpleAuthenticator.class
+org/apache/flume/auth/FlumeAuthenticationUtil.class
+org/apache/flume/auth/KerberosAuthenticator$1.class
+org/apache/flume/api/SecureThriftRpcClient.class
+org/apache/flume/auth/FlumeAuthenticator.class

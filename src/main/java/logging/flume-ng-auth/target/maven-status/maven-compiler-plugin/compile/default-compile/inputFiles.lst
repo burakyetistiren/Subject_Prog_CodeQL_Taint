@@ -1,0 +1,10 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/KerberosAuthenticator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/UGIExecutor.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/SecurityException.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/FlumeAuthenticationUtil.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/KerberosUser.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/FlumeAuthenticator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/api/SecureRpcClientFactory.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/api/SecureThriftRpcClient.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/SimpleAuthenticator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-auth/src/main/java/org/apache/flume/auth/PrivilegedExecutor.java

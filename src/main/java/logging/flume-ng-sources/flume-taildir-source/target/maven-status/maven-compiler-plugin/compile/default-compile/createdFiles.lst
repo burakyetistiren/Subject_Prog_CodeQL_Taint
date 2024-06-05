@@ -1,0 +1,13 @@
+org/apache/flume/source/taildir/TailFile.class
+org/apache/flume/source/taildir/TaildirSourceConfigurationConstants.class
+org/apache/flume/source/taildir/TaildirSource.class
+org/apache/flume/source/taildir/ReliableTaildirEventReader.class
+org/apache/flume/source/taildir/ReliableTaildirEventReader$Builder.class
+org/apache/flume/source/taildir/TaildirMatcher$1.class
+org/apache/flume/source/taildir/TaildirMatcher.class
+org/apache/flume/source/taildir/TaildirSource$PositionWriterRunnable.class
+org/apache/flume/source/taildir/TailFile$LineResult.class
+org/apache/flume/source/taildir/TaildirSource$1.class
+org/apache/flume/source/taildir/TaildirMatcher$2.class
+org/apache/flume/source/taildir/TaildirSource$idleFileCheckerRunnable.class
+org/apache/flume/source/taildir/ReliableTaildirEventReader$1.class

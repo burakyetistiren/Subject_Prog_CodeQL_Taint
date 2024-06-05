@@ -1,0 +1,8 @@
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/JMSSourceConfiguration.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/JMSDestinationType.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/InitialContextFactory.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/JMSDestinationLocator.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/JMSMessageConsumer.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/DefaultJMSMessageConverter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/JMSMessageConverter.java
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-sources/flume-jms-source/src/main/java/org/apache/flume/source/jms/JMSSource.java

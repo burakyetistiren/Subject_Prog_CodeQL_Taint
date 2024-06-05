@@ -1,0 +1,115 @@
+[T 23:23:04 89743] CodeQL CLI version 2.17.1
+[T 23:23:04 89743] Initializing tracer.
+[T 23:23:04 89743] Initializing tags.
+[T 23:23:04 89743] ID set to 0000000000015E8F_0000000000000001 (parent root)
+[T 23:23:05 89743] Initializing tracer.
+[T 23:23:05 89743] Initializing tags.
+[T 23:23:05 89743] ID set to 0000000000015E8F_0000000000000002 (parent root)
+[T 23:23:05 89743] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 23:23:05 89743] ==== Candidate to intercept: /Library/codeql/tools/osx64/runner-osx (canonical: /Library/codeql/tools/osx64/runner-osx) ====
+[T 23:23:05 89743] Lua: === Intercepted call to /library/codeql/tools/osx64/runner-osx ===
+[T 23:23:05 89743] Executing the following tracer actions:
+[T 23:23:05 89743] Tracer actions:
+[T 23:23:05 89743] pre_invocations(0)
+[T 23:23:05 89743] post_invocations(0)
+[T 23:23:05 89743] trace_languages(1): [java]
+[T 23:23:05 89757] Attempting to switch stdout/stderr to 3...
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/bin/bash.semmle.00015E8F.10EDF048.slice.x86_64: replacing existing signature
+[T 23:23:06 89743] Initializing tracer.
+[T 23:23:06 89743] Initializing tags.
+[T 23:23:06 89743] ID set to 0000000000015E8F_0000000000000003 (parent 0000000000015E8F_0000000000000002)
+[T 23:23:06 89743] ==== Candidate to intercept: /opt/homebrew/bin/mvn (canonical: /opt/homebrew/Cellar/maven/3.9.7/bin/mvn) ====
+[T 23:23:06 89743] Lua: === Intercepted call to /opt/homebrew/cellar/maven/3.9.7/bin/mvn ===
+[T 23:23:06 89743] Executing the following tracer actions:
+[T 23:23:06 89743] Tracer actions:
+[T 23:23:06 89743] pre_invocations(0)
+[T 23:23:06 89743] post_invocations(0)
+[T 23:23:06 89743] trace_languages(1): [java]
+[T 23:23:06 89787] Attempting to switch stdout/stderr to 3...
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/bin/sh.semmle.00015E8F.1B581770.slice.x86_64: replacing existing signature
+[T 23:23:06 89743] Initializing tracer.
+[T 23:23:06 89743] Initializing tags.
+[T 23:23:06 89743] ID set to 0000000000015E8F_0000000000000004 (parent 0000000000015E8F_0000000000000003)
+[T 23:23:06 89743] ==== Candidate to intercept: /opt/homebrew/Cellar/maven/3.9.7/libexec/bin/mvn (canonical: /opt/homebrew/Cellar/maven/3.9.7/libexec/bin/mvn) ====
+[T 23:23:06 89743] Lua: === Intercepted call to /opt/homebrew/cellar/maven/3.9.7/libexec/bin/mvn ===
+[T 23:23:06 89743] Executing the following tracer actions:
+[T 23:23:06 89743] Tracer actions:
+[T 23:23:06 89743] pre_invocations(0)
+[T 23:23:06 89743] post_invocations(0)
+[T 23:23:06 89743] trace_languages(1): [java]
+[T 23:23:06 89743] Initializing tracer.
+[T 23:23:06 89743] Initializing tags.
+[T 23:23:06 89743] ID set to 0000000000015E8F_0000000000000005 (parent 0000000000015E8F_0000000000000004)
+[T 23:23:06 89743] ==== Candidate to intercept: /bin/bash (canonical: /bin/bash) ====
+[T 23:23:06 89743] Lua: === Intercepted call to /bin/bash ===
+[T 23:23:06 89743] Executing the following tracer actions:
+[T 23:23:06 89743] Tracer actions:
+[T 23:23:06 89743] pre_invocations(0)
+[T 23:23:06 89743] post_invocations(0)
+[T 23:23:06 89743] trace_languages(1): [java]
+[T 23:23:06 89793] Attempting to switch stdout/stderr to 3...
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/usr/bin/uname.semmle.00015EC0.3A755118.slice.x86_64: replacing existing signature
+[T 23:23:07 89792] Initializing tracer.
+[T 23:23:07 89792] Initializing tags.
+[T 23:23:07 89792] ID set to 0000000000015EC0_0000000000000001 (parent 0000000000015E8F_0000000000000005)
+[T 23:23:07 89792] ==== Candidate to intercept: /usr/bin/uname (canonical: /usr/bin/uname) ====
+[T 23:23:07 89792] Lua: === Intercepted call to /usr/bin/uname ===
+[T 23:23:07 89792] Executing the following tracer actions:
+[T 23:23:07 89792] Tracer actions:
+[T 23:23:07 89792] pre_invocations(0)
+[T 23:23:07 89792] post_invocations(0)
+[T 23:23:07 89792] trace_languages(1): [java]
+[T 23:23:07 89803] Attempting to switch stdout/stderr to 3...
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/usr/bin/dirname.semmle.00015ECA.0C6435F0.slice.x86_64: replacing existing signature
+[T 23:23:07 89802] Initializing tracer.
+[T 23:23:07 89802] Initializing tags.
+[T 23:23:07 89802] ID set to 0000000000015ECA_0000000000000001 (parent 0000000000015E8F_0000000000000005)
+[T 23:23:07 89802] ==== Candidate to intercept: /usr/bin/dirname (canonical: /usr/bin/dirname) ====
+[T 23:23:07 89802] Lua: === Intercepted call to /usr/bin/dirname ===
+[T 23:23:07 89802] Executing the following tracer actions:
+[T 23:23:07 89802] Tracer actions:
+[T 23:23:07 89802] pre_invocations(0)
+[T 23:23:07 89802] post_invocations(0)
+[T 23:23:07 89802] trace_languages(1): [java]
+[T 23:23:07 89825] Attempting to switch stdout/stderr to 3...
+/Library/Developer/CommandLineTools/usr/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java.semmle.00015E8F.1F0709F8.slice.x86_64
+/Library/Developer/CommandLineTools/usr/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java.semmle.00015E8F.1F0709F8.slice.x86_64
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java.semmle.00015E8F.1F0709F8.slice.x86_64: replacing existing signature
+[T 23:23:07 89743] Initializing tracer.
+[T 23:23:07 89743] Initializing tags.
+[T 23:23:07 89743] ID set to 0000000000015E8F_0000000000000006 (parent 0000000000015E8F_0000000000000005)
+[T 23:23:07 89743] ==== Candidate to intercept: /Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java (canonical: /Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java) ====
+[T 23:23:07 89743] Lua: === Intercepted call to /library/java/javavirtualmachines/openlogic-openjdk-21.jdk/contents/home/bin/java ===
+[T 23:23:07 89743] Executing the following tracer actions:
+[T 23:23:07 89743] Tracer actions:
+[T 23:23:07 89743] pre_invocations(0)
+[T 23:23:07 89743] post_invocations(0)
+[T 23:23:07 89743] trace_languages(1): [java]
+[T 23:23:07 89743] Passing through -javaagent:/Library/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 23:23:07 89743] Passing through -Xbootclasspath/a:/Library/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 23:23:08 89743] Intercepted JVM creation with extra hidden args: ['-javaagent:/Library/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/Library/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 23:23:16 89989] Attempting to switch stdout/stderr to 109...
+/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/crypto/Crypto/working/copy-root/000001F5/Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/lib/jspawnhelper.semmle.00015E8F.0BE1BF80.slice.x86_64: replacing existing signature
+[T 23:23:16 89994] Initializing tracer.
+[T 23:23:16 89994] Initializing tags.
+[T 23:23:16 89994] ID set to 0000000000015F8A_0000000000000001 (parent 0000000000015E8F_0000000000000006)
+[T 23:23:16 89994] ==== Candidate to intercept: /Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/lib/jspawnhelper (canonical: /Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/lib/jspawnhelper) ====
+[T 23:23:16 89994] Lua: === Intercepted call to /library/java/javavirtualmachines/openlogic-openjdk-21.jdk/contents/home/lib/jspawnhelper ===
+[T 23:23:16 89994] Executing the following tracer actions:
+[T 23:23:16 89994] Tracer actions:
+[T 23:23:16 89994] pre_invocations(0)
+[T 23:23:16 89994] post_invocations(0)
+[T 23:23:16 89994] trace_languages(1): [java]
+[T 23:23:16 89994] Initializing tracer.
+[T 23:23:16 89994] Initializing tags.
+[T 23:23:16 89994] ID set to 0000000000015F8A_0000000000000002 (parent 0000000000015F8A_0000000000000001)
+[T 23:23:16 89994] ==== Candidate to intercept: /Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java (canonical: /Library/Java/JavaVirtualMachines/openlogic-openjdk-21.jdk/Contents/Home/bin/java) ====
+[T 23:23:16 89994] Lua: === Intercepted call to /library/java/javavirtualmachines/openlogic-openjdk-21.jdk/contents/home/bin/java ===
+[T 23:23:16 89994] Executing the following tracer actions:
+[T 23:23:16 89994] Tracer actions:
+[T 23:23:16 89994] pre_invocations(0)
+[T 23:23:16 89994] post_invocations(0)
+[T 23:23:16 89994] trace_languages(1): [java]
+[T 23:23:16 89994] Passing through -javaagent:/Library/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 23:23:16 89994] Passing through -Xbootclasspath/a:/Library/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 23:23:17 89994] Intercepted JVM creation with extra hidden args: ['-javaagent:/Library/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/Library/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).

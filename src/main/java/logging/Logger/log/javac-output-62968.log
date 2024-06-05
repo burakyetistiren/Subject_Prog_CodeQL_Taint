@@ -1,0 +1,13 @@
+[2024-06-05 00:43:09] [javac-output-62968] warning: [options] bootstrap class path is not set in conjunction with -source 8
+[2024-06-05 00:43:09] [javac-output-62968]   not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+[2024-06-05 00:43:09] [javac-output-62968]     --release 8 is recommended instead of -source 8 -target 1.8 because it sets the bootstrap class path automatically
+[2024-06-05 00:43:09] [javac-output-62968] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2024-06-05 00:43:09] [javac-output-62968] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2024-06-05 00:43:09] [javac-output-62968] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2024-06-05 00:43:09] [javac-output-62968] Note: Annotation processing is enabled because one or more processors were found
+[2024-06-05 00:43:09] [javac-output-62968]   on the class path. A future release of javac may disable annotation processing
+[2024-06-05 00:43:09] [javac-output-62968]   unless at least one processor is specified by name (-processor), or a search
+[2024-06-05 00:43:09] [javac-output-62968]   path is specified (--processor-path, --processor-module-path), or annotation
+[2024-06-05 00:43:09] [javac-output-62968]   processing is enabled explicitly (-proc:only, -proc:full).
+[2024-06-05 00:43:09] [javac-output-62968]   Use -Xlint:-options to suppress this message.
+[2024-06-05 00:43:09] [javac-output-62968]   Use -proc:none to disable annotation processing.

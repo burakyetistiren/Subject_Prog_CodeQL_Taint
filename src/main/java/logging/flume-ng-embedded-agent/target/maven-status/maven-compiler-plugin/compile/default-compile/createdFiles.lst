@@ -1,0 +1,6 @@
+org/apache/flume/agent/embedded/MemoryConfigurationProvider.class
+org/apache/flume/agent/embedded/EmbeddedSource.class
+org/apache/flume/agent/embedded/MaterializedConfigurationProvider.class
+org/apache/flume/agent/embedded/EmbeddedAgent.class
+org/apache/flume/agent/embedded/EmbeddedAgent$State.class
+org/apache/flume/agent/embedded/EmbeddedAgentConfiguration.class

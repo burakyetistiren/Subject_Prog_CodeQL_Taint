@@ -1,0 +1,21 @@
+[2024-06-05 00:38:08] [javac-extractor-50856] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 21 --javac-args @@@/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/log/ext/javac-1.args
+                                              user.dir=/Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging
+[2024-06-05 00:38:08] [javac-extractor-50856] Compilation name /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/diagnostics/diagnostic-1.trap.gz
+[2024-06-05 00:38:08] [javac-extractor-50856] [WARN] Appending source destination directory /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-configfilters/flume-ng-config-filter-api/target/generated-sources/annotations to sourcepath
+[2024-06-05 00:38:11] [javac-extractor-50856] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2024-06-05 00:38:11] [javac-extractor-50856] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2024-06-05 00:38:12] [javac-extractor-50856] Processing file /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-configfilters/flume-ng-config-filter-api/src/main/java/org/apache/flume/configfilter/ConfigFilter.java
+[2024-06-05 00:38:12] [javac-extractor-50856] [WARN] Not rewriting trap file for /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/classes/java/util/Map.members/Map.members#65.0-1713779056000-java.trap.gz as it exists
+[2024-06-05 00:38:12] [javac-extractor-50856] [WARN] Not rewriting trap file for /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/classes/java/lang/String.members/String.members#65.0-1713779056000-java.trap.gz as it exists
+[2024-06-05 00:38:12] [javac-extractor-50856] [WARN] Not rewriting trap file for /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/classes/java/lang/Object.members/Object.members#65.0-1713779056000-java.trap.gz as it exists
+[2024-06-05 00:38:12] [javac-extractor-50856] Processing file /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/flume-ng-configfilters/flume-ng-config-filter-api/src/main/java/org/apache/flume/configfilter/AbstractConfigFilter.java
+[2024-06-05 00:38:12] [javac-extractor-50856] [WARN] Not rewriting trap file for /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/classes/java/lang/String.members/String.members#65.0-1713779056000-java.trap.gz as it exists
+[2024-06-05 00:38:12] [javac-extractor-50856] [WARN] Not rewriting trap file for /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/classes/org/apache/flume/configfilter/ConfigFilter.members/ConfigFilter.members#0.0-1717568753049-java.trap.gz as it exists
+[2024-06-05 00:38:12] [javac-extractor-50856] [WARN] Not rewriting trap file for /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/classes/java/lang/Object.members/Object.members#65.0-1713779056000-java.trap.gz as it exists
+[2024-06-05 00:38:12] [javac-extractor-50856] [WARN] Not rewriting trap file for /Users/burakyetistiren/Desktop/Subject_Prog_CodeQL_Taint/src/main/java/logging/Logger/trap/java/classes/java/lang/Override.members/Override.members#65.0-1713779056000-java.trap.gz as it exists
+[2024-06-05 00:38:12] [javac-extractor-50856] Javac init time: 3.2s
+[2024-06-05 00:38:12] [javac-extractor-50856] Javac attr time: 0.0s
+[2024-06-05 00:38:12] [javac-extractor-50856] Extractor time: 0.2s
+[2024-06-05 00:38:12] [javac-extractor-50856] Other time: 1.4s
+[2024-06-05 00:38:12] [javac-extractor-50856] Total time: 4.7s

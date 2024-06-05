@@ -1,0 +1,3 @@
+org/apache/flume/clients/log4jappender/Log4jAppender.class
+org/apache/flume/clients/log4jappender/Log4jAvroHeaders.class
+org/apache/flume/clients/log4jappender/LoadBalancingLog4jAppender.class
